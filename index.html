@@ -22,10 +22,9 @@
       font-size: 14px;
     }
     h1 {
-
+      position: center;
       font-size: 80px;
       margin-bottom: -25px;
-    
     }
     h2 {
       font-family: Verdana, Geneva, sans-serif;
@@ -63,6 +62,10 @@
       position: center;
       margin: 0 auto;
     }
+    img[type="2"] {
+      width: 440px;
+      position: center;
+    }
     p[type="data"] {
       
       font-weight: bold;
@@ -84,6 +87,15 @@
     li {
     display: block;
     padding: 5px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    img {
+         max-width: 280px;
+    }
+    img[type="2"] {
+      width: 280px;
+      position: center;
     }
   }
   .cool-link {
@@ -267,7 +279,7 @@
 <body>
   <header>
     <img src="/assets/jeff.png">
-    <h1><img src='https://i.imgur.com/qxesIxO.png' width="480px;"></h1>
+    <h1><img type="2" src="https://i.imgur.com/qxesIxO.png"></h1>
     <h2>Gastronomiczna</h2>
     <ul>
       <li><a class="cool-link" href="#">O mnie</a></li>
